@@ -37,6 +37,7 @@ target
 _site/
 activemq-data
 
+*.xml
 *.iml
 *.ipr
 *.iws
