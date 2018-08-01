@@ -1,0 +1,39 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>聚兜兜-下载</title>
+    <meta id="eqMobileViewport" name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<script type="text/javascript">
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+            // orientationchange 事件是在用户水平或者垂直翻转设备（即方向发生变化）时触发的事件。
+            // onresize 事件会在窗口或框架被调整大小时发生。
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                window.clientWidth = docEl.clientWidth;
+                if (!window.clientWidth) return;
+                docEl.style.fontSize = 40 * (window.clientWidth / 640) + 'px';
+                window.base = 40 * (window.clientWidth / 640);
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+<body>
+<main>
+    <header>
+        <img src="./logo.png">
+        <p>聚兜兜</p>
+        <button>立即下载</button>
+    </header>
+</main>
+<p class="message">
+    聚管家，呵护你我他
+</p>
+</body>
+</html>
