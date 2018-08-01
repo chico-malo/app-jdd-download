@@ -37,16 +37,24 @@ main header p {
     margin: 12px 0 20px;
 }
 /*按钮*/
-main header button {
-    outline: none;
-    border: none;
+main header a {
+    display: inline-block;
+    text-decoration: none;
     border-radius: 8px;
     padding: 12px 70px;
     font-size: 15px;
     background: rgba(209, 0, 0, 1);
     color: #fff;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, .1);
+    transition: background .5s ease-in-out;
 }
+
+main header a:hover {
+    text-decoration: underline;
+    transition: background .5s ease-in-out;
+    background: rgba(148, 5, 5, 1);
+}
+
 .message {
     position: absolute;
     bottom: 10px;
