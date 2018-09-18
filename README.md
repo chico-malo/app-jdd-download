@@ -1,5 +1,5 @@
-# app-download-web
-app下载页（聚兜兜）
+# app-jdd-download
+app下载页（jdd）
 
 ## 启动
 
